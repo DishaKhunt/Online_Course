@@ -1,0 +1,34 @@
+
+/* top course */
+@media (max-width : 775px ) and (min-width : 320px){ 
+    /* navbar for course */
+    .btn-container .course-name-container{
+        overflow-x: auto;
+    }
+    .btn-container .course-name-container::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    /* tranding course */
+    .tranding-course-container .course-name{
+        overflow-x: auto;
+        padding: 10px;
+    }
+    .tranding-course-container .course-name::-webkit-scrollbar{
+        width: 0;
+    }
+    .tranding-course-container .course-name .card{
+        min-width: 300px;
+    }
+
+    /*  populer instructor  */
+    .instructor-conatiner{
+        overflow-x: auto;
+    }
+    .instructor-conatiner::-webkit-scrollbar{
+        width: 0;
+    }
+    .instructor-conatiner .col .img-name{
+        display: block;
+    }
+} 

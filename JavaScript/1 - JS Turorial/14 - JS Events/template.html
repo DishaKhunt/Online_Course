@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Template</title>
+</head>
+<body onload="alert('page is executed.')">
+    <!-- onclick -->
+    <h3>onclick event</h3>
+    <div class="section" >
+        <div class="container" id="demo">
+            <button onclick="onClick()" >click me!</button>
+        </div>
+      
+    </div>
+
+    <!-- onchange -->
+    <h3>Onchange Event</h3>
+    <div class="section" >
+        <h4>Choose Language</h4>
+        <select id="choose" onchange="onChange()">
+            <option value="C++">C++</option>
+            <option value="C launguage">C launguage</option>
+            <option value="Javascript">Javascript</option>
+            <option value="PHP">PHP</option>
+        </select>
+        <p id="change"></p>
+    </div>
+
+        <!-- Onmousehover -->
+        <h3>Mouse hover Event</h3>
+        <div class="section">
+            <h3 id="over" onmouseover="onOver()">Hellooo , I am Disha!!!!!</h3>
+        </div>
+
+        <!-- Onkeypress -->
+        <h3>KeyPress Event</h3>
+        <div class="section">
+            <input type="text" id="press" onkeypress="onKeyPress()">
+            <p id="msg"></p>
+        </div>
+
+   <script src="template.js"></script>
+</body>
+</html>

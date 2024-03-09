@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage API</title>
+    <style>
+        h2{
+           margin: 10px 0px;
+           padding: 10px;
+           background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+           color: #fae4fd;
+       }
+       p{
+           color: #45134b;
+       }
+    </style>
+</head>
+<body>
+    <h2>Web Storage API</h2>
+
+    <p id="demo1"></p>
+
+    <h3>The localStorage Object</h3>
+
+    <h4>The setItem() Method</h4>
+    <p>localStorage.setItem("name","Disha Khunt");</p>
+   
+    <h4>The getItem() Method</h4>
+    <p>localStorage.getItem("name");</p>
+
+  <hr>
+    <h3>sessionStorage Object</h3>
+    <p id="demo2"></p>
+
+    <h4>setItem() Method</h4>
+    <p>sessionStorage.setItem("name", "Disha Khunt");</p>
+
+    <h4>getItem() Method</h4>
+    sessionStorage.getItem("name");
+
+    <hr>
+    <h4>Storage key() Method</h4>
+    <button onclick="myFunction()">Get the name  of the first local storage item</button>
+    <p id="demo3"></p>
+    <hr>
+
+    <h5>Get the name of sessionStorage Item</h5>
+    <button onclick="createItems()">Create session storage items</button>
+
+    <p>Click the button to get the name of the first session storage item:</p>
+    <button onclick="myFunction1()">Get item name</button>
+    <p id="demo4"></p>
+
+    <hr>
+    <h3>Missing localStorage items?</h3>
+    <button onclick="createItems1()">Create local storage items</button>
+
+    <h3>Displat Items</h3>
+    <p>Click the button to display all items:</p>
+    <button onclick="displayItems()">Display Items</button>
+    <p id="demo5"></p>
+    <hr>
+
+    <h4>Storage removeItem() Method</h4>
+    <p>Remove Item</p>
+    <button onclick="deleteItem()">Delete item</button>
+    <p>Display item</p>
+    <button onclick="displayItem()">Display item</button>
+    <p id="demo6"></p>
+
+    <hr>
+    <h4>Storage clear() Method</h4>
+    <p>Missing localStorage items?</p>
+    <button onclick="createItems1()">Create local storage items</button>
+    <button onclick="deleteItems()">Delete Items</button>
+    <button onclick="displayItems1()">Display Items</button>
+    <p id="demo7"></p>
+
+    <hr>
+    <h3>localStorage Property</h3>
+    <button onclick="clickCounter()">Click Me!</button>
+    <p>Number of clicks:</p>
+    <p id="demo8"></p>
+
+    <footer>
+        <script src="storageAPI.js"></script>
+    </footer>
+</body>
+</html>

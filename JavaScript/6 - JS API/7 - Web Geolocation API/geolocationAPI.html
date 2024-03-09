@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation API</title>
+    <style>
+        h2{
+           margin: 10px 0px;
+           padding: 10px;
+           background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+           color: #fae4fd;
+        }
+        p{
+            color: #45134b;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Web Geolocation API</h2>
+
+    <h3>Using the Geolocation API</h3>
+    <p>Click the button to get your coordinates.</p>
+    <button onclick="getLocation()">Click Me!</button>
+    <p id="demo1"></p>
+
+   
+    <h3>Displaying the Result in a Map</h3>
+    <button onclick="getLocation1()">Click Me!</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+
+    <footer>
+        <script src="geolocationAPI.js"></script>
+    </footer>
+</body>
+</html>

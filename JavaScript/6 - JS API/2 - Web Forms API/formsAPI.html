@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form API</title>
+    <style>
+        h2{
+           margin: 10px 0px;
+           padding: 10px;
+           background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+           color: #fae4fd;
+       }
+       p{
+           color: #45134b;
+       }
+    </style>
+</head>
+<body>
+    <h2>Validation API</h2>
+
+    <h3>checkValidity() Method</h3>
+    <input type="number" id="id1" min="100" max="200" required> 
+    <button onclick="myFunction()">OK</button>
+    <p id="demo"></p>
+    
+    
+    <h3>rangeOverflow Property</h3>
+    <input type="number" id="id2" max="100">
+    <button onclick="myFunction1()">OK</button>
+    <p id="demo1"></p>
+
+
+    <h3>rangeUnderflow Property</h3>
+    <input type="number" id="id3" min="100">
+    <button onclick="myFunction2()">OK</button>
+    <p id="demo2"></p>
+    
+    <h3>tooLong</h3>
+    Name : <input type="text" id="id4" maxlength="15" required>
+    <button onclick="myFunction3()">OK</button>
+    <p id="demo3"></p>
+
+    <h3>patternMismatch</h3>
+    Phon No : <input type="tel" id="id5" pattern="[0-9]{10}" required>
+    <button onclick="myFunction4()">OK</button>
+    <p id="demo4"></p>
+
+    <h3>stepMismatch</h3>
+    <input type="number" id="id6" min="20" max="40" step="2">
+    <button onclick="myFunction5()">OK</button>
+    <p id="demo5"></p>
+
+    <h3>typeMismatch</h3>
+    Email : <input type="email" id="id7" placeholder="Enter yout mail id">
+    <button onclick="myFunction6()">OK</button>
+    <p id="demo6"></p>
+ 
+    <footer>
+        <script src="formsAPI.js"></script>
+    </footer>
+</body>
+</html>

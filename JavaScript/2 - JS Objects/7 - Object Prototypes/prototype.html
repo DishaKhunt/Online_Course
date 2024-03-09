@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <style>
+        h2{
+            margin: 10px 0px;
+            padding: 10px;
+            background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+            color: #fae4fd;
+        }
+        p{
+            color: #45134b;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Object Prototypes</h2>
+
+    <p id="demo1"></p>
+
+    <!-- 
+        Prototype Inheritance
+        All JavaScript objects inherit properties and methods from a prototype:
+
+            -> Date objects inherit from Date.prototype
+            -> Array objects inherit from Array.prototype
+            -> Person objects inherit from Person.prototype
+    
+        The Object.prototype is on the top of the prototype inheritance chain:
+
+        ate objects, Array objects, and Person objects inherit from Object.prototype. 
+    -->
+
+    <h3>Using the prototype Property</h3>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <footer>
+        <script src="prototype.js"></script>
+    </footer>
+</body>
+</html>

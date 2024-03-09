@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterables</title>
+    <style>
+        h2{
+            margin: 10px 0px;
+            padding: 10px;
+            background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+            color: #fae4fd;
+        }
+        p{
+            color: #45134b;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Iterables</h2>
+
+    <h3>Iterating Over a String</h3>
+    <p id="demo1"></p>
+
+    <h3>Iterating Over an Array</h3>
+    <p id="demo2"></p>
+
+    <h3>Home Made Iterable</h3>
+    <p id="demo3"></p>
+
+    <!-- 
+        A JavaScript iterable is an object that has a Symbol.iterator.
+
+        The Symbol.iterator is a function that returns a next() function.
+
+        An iterable can be iterated over with the code: for (const x of iterable) { }
+     -->
+
+     <h4>Symbol.iterator</h4>
+    <p id="demo4"></p>
+
+    <p id="demo5"></p>
+
+    <footer>
+        <script src="iterable.js"></script>
+    </footer>
+</body>
+</html>

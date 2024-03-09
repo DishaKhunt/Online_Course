@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    height: auto;
+    width: 250px;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px;
+    background-color: rgb(230, 180, 180);
+}
+h3{
+    text-align: center;
+}
+#demo, #demo1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: auto;
+}
+button{
+    padding: 5px;
+    margin: 50px 25px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    
+}

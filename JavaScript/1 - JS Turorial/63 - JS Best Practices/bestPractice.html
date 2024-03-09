@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>best Practice</title>
+    <style>
+        h2{
+            margin: 10px 0px;
+            padding: 10px;
+            background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+            color: #fae4fd;
+        }
+        p{
+            color: #45134b;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Best Practices</h2>
+
+    <!-- 
+        Declarations on Top
+        => It is a good coding practice to put all declarations at the top of each script or function.
+
+        => This will:
+
+            - Give cleaner code
+            - Provide a single place to look for local variables
+            - Make it easier to avoid unwanted (implied) global variables
+            - Reduce the possibility of unwanted re-declarations
+     -->
+
+     <p id="demo1"></p>
+
+     <!-- 
+        Initialize Variables
+        => It is a good coding practice to initialize variables when you declare them.
+
+        => This will:
+
+        - Give cleaner code
+        - Provide a single place to initialize variables
+        - Avoid undefined values
+      -->
+
+
+      <!--
+         Declare Objects with const
+         => Declaring objects with const will prevent any accidental change of type
+        -->
+
+        <!-- 
+            Don't Use new Object()
+                - Use "" instead of new String()
+                - Use 0 instead of new Number()
+                - Use false instead of new Boolean()
+                - Use {} instead of new Object()
+                - Use [] instead of new Array()
+                - Use /()/ instead of new RegExp()
+                - Use function (){} instead of new Function()
+         -->
+         <h3>Don't Use new Object()</h3>
+         <p id="demo2"></p>
+
+         <!-- 
+            Beware of Automatic Type Conversions
+                - JavaScript is loosely typed.
+                - A variable can contain all data types.
+          -->
+          <h3>Beware of Automatic Type Conversions</h3>
+          <p id="demo3"></p>
+
+          <p id="demo4"></p>
+          <p id="demo5"></p>
+
+          <h3>Use === Comparison</h3>
+          <!-- 
+            => The == comparison operator always converts (to matching types) before comparison.
+            => The === operator forces comparison of values and type
+           -->
+           <p id="demo6"></p>
+
+           <h3>Use Parameter Defaults</h3>
+           <p id="demo7"></p>
+
+           <h3>End Your Switches with Defaults</h3>
+           <p id="demo8"></p>
+
+           <h3>Avoid Number, String, and Boolean as Objects</h3>
+           <p id="demo9"></p>
+
+           <!-- 
+            Avoid Using eval()
+            => The eval() function is used to run text as code. In almost all cases, it should not be necessary to use it.
+
+            => Because it allows arbitrary code to be run, it also represents a security problem 
+            -->
+
+    <footer>
+        <script src="bestPractice.js"></script>
+    </footer>
+</body>
+</html>

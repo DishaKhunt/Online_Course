@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Applications</title>
+    <style>
+        h2{
+           margin: 10px 0px;
+           padding: 10px;
+           background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+           color: #fae4fd;
+           }
+           p{
+           color: #45134b;
+           }
+           button{
+            border-style: none;
+            background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 18px;
+           }
+           table,th,td {
+                border : 1px solid black;
+                border-collapse: collapse;
+            }
+            th,td {
+                padding: 5px;
+            }
+           
+    </style>
+</head>
+<body>
+    <h2>XML Applications</h2>
+
+    <h3>Display XML Data in an HTML Table</h3>
+
+    <button type="button" onclick="loadXMLDoc()">Get my CD collection</button>
+    <br><br>
+    <table id="demo"></table>
+
+    <hr>
+    <h3>Display the First CD in an HTML div Element</h3>
+    <div id='showCD'></div>
+
+    <hr>
+    <h3>Navigate Between the CDs</h3>
+    <div id='showCD1'></div><br>
+    <input type="button" onclick="previous()" value="<<">
+    <input type="button" onclick="next()" value=">>">
+
+    <hr>
+    <h3>Show Album Information When Clicking On a CD</h3>
+    <p>Click on a CD to display album information.</p>
+    <p id='showCD2'></p>
+    <table id="demo2"></table>
+
+    <footer>
+        <script src="application.js"></script>
+    </footer>
+</body>
+</html>

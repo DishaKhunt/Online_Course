@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance</title>
+    <style>
+          h2{
+            margin: 10px 0px;
+            padding: 10px;
+            background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+            color: #fae4fd;
+        }
+        p{
+            color: #45134b;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Performance</h2>
+
+    <h3>Reduce Activity in Loops</h3>
+    <p id="demo1"></p>
+
+    <h3>Reduce DOM Access</h3>
+    <p id="demo2"></p>
+
+    <p id="script">Hello File loadded...</p>
+
+    <script>
+        window.onload = function() {
+        const element = document.createElement("script");
+        element.src = "performance.js";
+     document.body.appendChild(element);
+  };
+    </script>
+
+    <!-- The with keyword is not allowed in strict mode. -->
+    <!-- <footer>
+        <script src="performance.js"></script>
+    </footer> -->
+</body>
+</html>

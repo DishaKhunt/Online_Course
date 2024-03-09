@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>not Reassigned Array</title>
+</head>
+<body>
+    <h2>Not Reassigned Constant array</h2>
+    <p id="demo"></p>
+
+    <script>
+        try {
+            const cars = ["Thar", "Verna", "BMW"];
+            cars = ["Toyota", "Verna", "Audi"];
+        }
+        catch (err) {
+             document.getElementById("demo").innerHTML = err;
+        }
+    </script>
+</body>
+</html>

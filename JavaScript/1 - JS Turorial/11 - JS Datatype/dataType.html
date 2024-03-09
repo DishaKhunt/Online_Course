@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type</title>
+</head>
+<body>
+    <h2>Data types</h2>
+
+    <h4>Numbers:</h4>
+    <p id="demo1"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+
+    <h4>String:</h4>
+    <p id="demo2"></p>
+    <p id="demo21"></p>
+    <p id="demo22"></p>
+    <p id="demo23"></p>
+    <p id="demo24"></p>
+
+
+    <h4>Boolean:</h4>
+    <p id="demo3"></p>
+
+    <h4>Object:</h4>
+    <p id="demo4"></p>
+
+    <h4>Array:</h4>
+    <p id = "demo5"></p>
+
+    <h4>Exponential Notation:</h4>
+    <p id="demo6"></p>
+    <p id="demo61"></p>
+
+    <h4>BigInt</h4>
+    <p id="demo7"></p>
+
+    <h4>Date:</h4>
+    <p id=" demo"></p>
+
+
+    <script>
+        //Numbers:
+        let x = 5;
+        let x1 = 5.00;
+        let x2 = 5.5;
+
+         //Number Display
+         document.getElementById("demo1").innerHTML = "Number 5 is : "+x;
+        document.getElementById("demo11").innerHTML = "Number 5.0 is : "+x1;
+        document.getElementById("demo12").innerHTML = "Number 5.5 is : "+x2;
+        document.getElementById("demo13").innerHTML = typeof x;
+
+        // String:
+        let name = "disha";
+        let str1 = "It's alright";
+        let str2 = "He is called 'Disha'";
+        let str3 = 'He is called "Disha"';
+
+        // String Display
+        document.getElementById("demo2").innerHTML = "String is : "+name;
+        document.getElementById("demo21").innerHTML = "String is : "+str1;
+        document.getElementById("demo22").innerHTML = "String is : "+str2;
+        document.getElementById("demo23").innerHTML = "String is : "+str3;
+        document.getElementById("demo24").innerHTML = typeof name;
+
+        // Boolean:
+        let bol = true;
+        document.getElementById("demo3").innerHTML = "boolean is : "+bol;
+
+        // object:
+        const obj = {person: "Disha", age: 20};
+        document.getElementById("demo4").innerHTML = "person name is : "+obj.person;
+      
+
+        // Array:
+        let cars = ["thar", "BMW", "Verna"];
+        document.getElementById("demo5").innerHTML = "cars name  is : "+cars;
+
+        // exponential notation
+        let y = 123e5;
+        let z = 123e-5;
+         // exponential display
+         document.getElementById("demo6").innerHTML = "123e5: "+y;
+        document.getElementById("demo61").innerHTML = "123e-5: "+z;
+
+        // BigInt
+        let a = BigInt("123456789012345678901234567890");
+        document.getElementById("demo7").innerHTML = a; 
+        // Date:
+        const date = new Date("2022-03-25");       
+        documnet.getElementById("demo").innerHTML = date;
+
+    </script>
+</body>
+</html>

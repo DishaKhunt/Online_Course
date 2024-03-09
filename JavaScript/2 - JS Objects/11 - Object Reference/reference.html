@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Reference</title>
+    <style>
+         h2{
+            margin: 10px 0px;
+            padding: 10px;
+            background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+            color: #fae4fd;
+        }
+        p{
+            color: #45134b;
+        }
+    </style>
+</head>
+<body>
+    <h2> Object Methods</h2>
+
+    <!-- 
+        Managing Objects
+
+        // Create object with an existing object as prototype
+        Object.create()
+
+        // Adding or changing an object property
+        Object.defineProperty(object, property, descriptor)
+
+        // Adding or changing object properties
+        Object.defineProperties(object, descriptors)
+
+        // Accessing Properties
+        Object.getOwnPropertyDescriptor(object, property)
+
+        // Returns all properties as an array
+        Object.getOwnPropertyNames(object)
+
+        // Accessing the prototype
+        Object.getPrototypeOf(object)
+
+        // Returns enumerable properties as an array
+        Object.keys(object)
+     -->
+
+     <!-- 
+        Protecting Objects
+
+        // Prevents adding properties to an object
+        Object.preventExtensions(object)
+
+        // Returns true if properties can be added to an object
+        Object.isExtensible(object)
+
+        // Prevents changes of object properties (not values)
+        Object.seal(object)
+
+        // Returns true if object is sealed
+        Object.isSealed(object)
+
+        // Prevents any changes to an object
+        Object.freeze(object)
+
+        // Returns true if object is frozen
+        Object.isFrozen(object)
+      -->
+
+    <h3>Changing a Property Value</h3>
+    <p id="demo1"></p>
+
+    
+
+    <script src="reference.js"></script>
+</body>
+</html>

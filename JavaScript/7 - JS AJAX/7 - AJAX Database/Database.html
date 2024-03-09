@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Database Example</title>
+    <style>
+          h2{
+           margin: 10px 0px;
+           padding: 10px;
+           background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+           color: #fae4fd;
+           }
+           p{
+           color: #45134b;
+           }
+           button{
+            border-style: none;
+            background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 18px;
+           }
+    </style>
+</head>
+<body>
+    <h2>AJAX Database Example</h2>
+
+    <form action=""> 
+        <select name="customers" onchange="showCustomer(this.value)">
+            <option value="">Select a customer:</option>
+            <option value="ALFKI">Alfreds Futterkiste</option>
+            <option value="NORTS ">North/South</option>
+            <option value="WOLZA">Wolski Zajazd</option>
+        </select>
+    </form>
+    <br>
+    <div id="txtHint">Customer info will be listed here...</div>
+
+    <footer>
+        <script src="Database.js"></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - Server Response</title>
+    <style>
+          h2{
+           margin: 10px 0px;
+           padding: 10px;
+           background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+           color: #fae4fd;
+           }
+           p{
+           color: #45134b;
+           }
+           button{
+            border-style: none;
+            background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 18px;
+           }
+    </style>
+</head>
+<body>
+    <h2>AJAX - Server Response</h2>
+
+    <h3>The responseText Property</h3>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+    <p id="demo1"></p>  
+
+    <hr>
+    <h3>The responseXML Property</h3>
+    <p id="demo2"></p>
+
+    <hr>
+
+    <h3>Server Response Methods</h3>
+    <h4>The getAllResponseHeaders() Method</h4>
+    <p id="demo3"></p>
+
+    <h4>The getResponseHeader() Method</h4>
+    <p>Last Modified : <span id="demo4"></span></p>
+
+    <footer>
+        <script src="response.js"></script>
+    </footer>
+</body>
+</html>

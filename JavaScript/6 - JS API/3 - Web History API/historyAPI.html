@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History API</title>
+    <style>
+        h2{
+           margin: 10px 0px;
+           padding: 10px;
+           background: linear-gradient(#e8bdee, #ad6ab5, #57245e, #45134b);
+           color: #fae4fd;
+       }
+       p{
+           color: #45134b;
+       }
+    </style>
+</head>
+<body>
+    <h2>Web History API</h2>
+
+    <h3>History back() Method</h3>
+    <button onclick="myFunction()">Go Back</button>
+
+    <h3>History go() Method</h3>
+    <button onclick="myFunction1()">Go Back 2 pages</button>
+
+    <h3>History forward() Method</h3>
+    <button onclick="history.forward()">Go Forward</button>
+
+
+    <h3>The history.length Property</h3>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <footer>
+        <script src="historyAPI.js"></script>
+    </footer>
+</body>
+</html>
