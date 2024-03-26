@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --txt-color: black;
+    --bg-secondary: rgb(176, 176, 176);
+    --txt-lightgreen: #17ddc0;
+    --txt-danger: red;
+    --white: white;
+}
+
+.nav-container{
+    position: fixed;
+     top: 0px;
+     z-index: 1;
+     background: white;
+ }
+ 
+/* navbar */
+nav .become-instuctor-container a{
+    color: var(--txt-color);
+}
+/* drowp down menu*/
+nav .dropdown:hover > .dropdown-menu {
+    display: block;
+} 
+
+
+/* account container */
+
+.account-container ul li{
+    list-style: none;
+    position: relative;
+}
+
+.account-container ul li a{
+    color: var(--txt-color);
+}
+.account-container li a::before{
+    position: absolute;
+    content: '';
+    transition: 1s;
+    bottom: 0px;
+    left: 50%;
+    border-bottom:  3px solid var(--txt-lightgreen);
+    width: 0px;
+}
+.account-container li a:hover:before{
+    width: 50%;
+}
+.account-container li a::after{
+    position: absolute;
+    content: '';
+    transition: 1s;
+    bottom: 0px;
+    right: 50%;
+    border-bottom: 3px solid var(--txt-lightgreen);
+    width: 0px;
+}
+.account-container li a:hover:after{
+    width: 50%;
+}
+
+.account-container .form-container .form-floating input,.form-select{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.account-container .form-container .form-floating input:focus,.form-select:focus{
+    border: none;
+}
+
+.save-btn{
+    background: var(--txt-lightgreen);
+    color: white;
+    border-radius: 15px;
+}
+
+
+/* footer */
+.footer-container .row .col ul{
+    list-style: none;
+}
+.footer-container .row .col ul li:hover{
+    color: #17ddc0;
+}
+.footer-bottom-container .social-media{
+    flex-direction: row-reverse;
+    font-size: 25px;
+}
+.footer-bottom-container .social-media .bi:hover{
+    color: #17ddc0;
+}

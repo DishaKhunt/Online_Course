@@ -1,17 +1,17 @@
 .carousel-container {
-    background: black;
     height: 750px;
 }
 .carousel-container .carousel-img .blur-img{
     filter: blur(5px);
-    height: 500px;
+    height: 750px;
 }
 .carousel-container .container{
     position: absolute;
     top: 10%;
     left: 15%;
     width: 70%;
-    background: black;
+    background: white;
+    color: black;
     height: 600px;
     border-radius: 20px;
     box-shadow: 0px 0px 100px #30e4f14d;
@@ -73,12 +73,11 @@ form.sign-up-form{
     width: 100%;
     outline: none;
     color: #17ddc0;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .sign-container .form-container .input-group input:focus,
 .sign-container .form-container .input-group input:valid{
     border: 2px solid #17ddc0;
-    box-shadow: 0px 0px 10px #7aa19c;
 }
 .sign-container .form-container .input-group input:focus~label,
 .sign-container .form-container .input-group input:valid~label{
@@ -87,7 +86,7 @@ form.sign-up-form{
     left: 10px;
     color: #17ddc0;
     z-index: 10;
-    background: black;
+    background: white;
 }
 .sign-container .form-container button{
     background: linear-gradient(to right,#69ffe8, #42ddc5 ,#189d89, #0d6255 , #024b40);
@@ -148,6 +147,10 @@ form.sign-up-form{
     transform: translateX(0);
 }
 
+.btn2{
+    display: none;
+}
+
 /* Animation */
 .container.sign-up-mode::before{
     transform: translateX(0);
@@ -172,4 +175,59 @@ form.sign-up-form{
 }
 .container.sign-up-mode .left-panel{
     pointer-events: all;
+}
+
+@media (max-width:1220px){
+    .sign-container .form-container{
+        height: auto;
+        width: 80%;
+        margin: auto;
+    }
+    .container .sign-container{
+        width: 90%;    
+        padding: 30px 0px !important;
+    }
+}
+
+
+
+@media (max-width:779px){
+    .conatiner{
+        height: 400px !important;
+    }
+    .container::before{
+        display: none;
+    }
+    .sign-container .form-container{
+        height: auto;
+        width: 80%;
+        margin: auto;
+    }
+    .container .sign-container{
+        width: 100%;    
+        padding: 30px 0px !important;
+    }
+    .sign-up-container{
+        display: none;
+    }
+    .container.sign-up-mode2 .sign-up-container{
+        display: block;
+        opacity: 1;
+    }
+    .container.sign-up-mode2 form.sign-up-form{
+        opacity: 1;
+    }
+    .container.sign-up-mode2 .sign-in-container{
+        display: none;
+    }
+
+    .btn2{
+        display: block;
+    }
+    .btn2 a{
+        color: #17ddc0;
+    }
+    .panels-container{
+        display: none;
+    }
 }

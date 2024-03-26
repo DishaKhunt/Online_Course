@@ -16,29 +16,43 @@
     width: 100%;
 }
 .carousel-container .carousel-img img{
-    filter: brightness(60%);
+    filter: brightness(30%);
+}
+
+/* header */
+.carousel-container .header{
+    position: absolute;
+    top: 0px;
+    justify-content: center;
+    width: 100%;
 }
 
 /* navbar */
-.carousel-container nav{
-    position: absolute;
-    top: 2%;
+.carousel-container .header nav{
     background: transparent;
 }
+
  /* drowp down menu*/
  .carousel-container nav .dropdown:hover > .dropdown-menu {
     display: block;
 } 
 
+
+/* cart-icon */
+.carousel-container .header .cart-icon{
+    line-height: 100px;
+}
+
 /* login-form */
-.carousel-container nav .login-btn{
+.carousel-container .header nav .login-btn{
     border: 3px solid;
     border-image-slice: 1;
     border-width: 2px;
     border-image-source: linear-gradient(50deg, #8d8e8e 0%,#fbfcfc 100%);
     color: white;
+    height: 40px;
 }
-.carousel-container nav .login-btn:hover{
+.carousel-container .header .login-btn:hover{
     background: linear-gradient(50deg, #8d8e8e 0%,#fbfcfc 100%);
     color: black;
 }
@@ -74,17 +88,24 @@
 }
 
 
-
-.carousel-container nav .sign-in-btn{
+/* sign-in btn */
+.carousel-container .header .sign-in-btn{
     border: 3px solid;
     border-image-slice: 1;
     border-width: 2px;
     color: #17ddc0;
     border-image-source: linear-gradient(50deg, #03433a 0%,#40f0d5 100%);
+    height: 40px;
 }
-.carousel-container nav .sign-in-btn:hover{
+.carousel-container .header .sign-in-btn:hover{
     background: linear-gradient(50deg, #03433a 0%,#40f0d5 100%);
     color: white;
+}
+
+/* profile pic */
+.carousel-container .header .profile-img{
+    height: 50px;
+    width: 50px;
 }
 
 
@@ -142,7 +163,36 @@
 }
 
 
-.tranding-course-container .card{
+/* compelete course container */
+.complete-course-container .card{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(70, 70, 70, 0.3);
+    border-style: none;
+    border-radius: 23px;
+    position: relative;
+}
+
+.complete-course-container .card .progress{
+    height: 5px;
+}
+.complete-course-container .card .progress-bar{
+    background-color: #17ddc0;
+}
+
+.complete-course-container .card .card-img .card-icon{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    background: gray;
+    border-radius: 50%;
+    padding: 5px 15px;
+}
+
+/* more from kitani studio */
+/* tranding course container */
+.tranding-course-container .card,
+.kitani-studio-container .card{
     width: 300px;
     height: 400px;
     box-shadow: 0px 0px 10px rgba(70, 70, 70, 0.3);
@@ -150,13 +200,15 @@
     border-radius: 23px;
 }
 
-.tranding-course-container .card .card-img .card-btn{
+.tranding-course-container .card .card-img .card-btn,
+.kitani-studio-container .card .card-img .card-btn{
     position: absolute;
     top: 5%;
     left: 3%;
     font-size: 12px;
 }
-.tranding-course-container .card .card-img .card-btn .off{
+.tranding-course-container .card .card-img .card-btn .off,
+.kitani-studio-container .card .card-img .card-btn .off{
     background: rebeccapurple;
 }
 
@@ -183,7 +235,8 @@
     position: absolute;
     bottom: 430px;
     left: 290px;
-    background:  rgba(42, 41, 41, 0.3);
+    /* background:  rgba(42, 41, 41, 0.3); */
+    background:  rgba(1, 247, 255, 0.2);
     border-radius: 25px;
     transition: 1s ease-in-out;
 }
@@ -193,7 +246,8 @@
     position: absolute;
     top: 430px;
     right: 290px;
-    background: rgba(42, 41, 41, 0.3);
+    /* background: rgba(42, 41, 41, 0.3); */
+    background:  rgba(1, 247, 255, 0.2);
     border-radius: 25px;
     overflow: hidden;
     transition: 1s ease-in-out;
@@ -244,6 +298,6 @@
     flex-direction: row-reverse;
     font-size: 25px;
 }
-.footer-bottom-container .social-media .fa-brands:hover{
+.footer-bottom-container .social-media .bi:hover{
     color: #17ddc0;
 }
