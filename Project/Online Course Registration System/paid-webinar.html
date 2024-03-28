@@ -10,6 +10,9 @@
 
     <!-- fontawsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Paid webinar</title>
 </head>
 
@@ -304,35 +307,77 @@
         <!-- container video -->
         <div class="video-container">
             <div class="row">
-                <div class="col-md-8 mt-3 vdo-img">
+                <div class="col-lg-8 col-lg-8">
 
-                    <div class="video-img">
-                        <img src="Images/paid-webinar.jpg" alt="" height="100%" width="100%">
+                    <div class="vdo-img mt-3">
+                        <div class="video-img">
+                            <img src="Images/paid-webinar.jpg" alt="" height="100%" width="100%">
+                        </div>
+
+
+
+                        <div class="vdo-content">
+                            <h3 class="text-center">Purchase to continue this webinar class</h3>
+                            <p class="text-center px-5">You need buy package webinar to see full lessons this course,
+                                thank you.</p>
+                        </div>
+
+                        <button class="btn text-light rounded-pill" type="button">Buy Now</button>
+
+
+                        <div class="live-container d-flex gap-2">
+                            <button class="btn lv-btn text-light">LIVE NOW</button>
+                            <i class="bi bi-volume-up-fill fs-4 text-light"></i>
+                        </div>
+
+                        <div class="icon d-flex gap-2">
+                            <i class="bi bi-badge-hd-fill fs-5 text-light"></i>
+                            <i class="bi bi-badge-cc-fill fs-5 text-light"></i>
+                            <i class="bi bi-gear-fill fs-5 text-light"></i>
+                            <i class="bi bi-fullscreen fs-5 text-light"></i>
+                        </div>
                     </div>
 
-                    <div class="vdo-content">
-                        <h3 class="text-center">Purchase to continue this webinar class</h3>
-                        <p class="text-center px-5">You need buy package webinar to see full lessons this course, thank you.</p>
+                    <div class="video-heading mt-3 row">
+                        <div class="col">
+                            <h3>VUE JS SCRATCH COURSE</h3>
+                            <div class="d-flex mt-2">
+                                <div class="logo d-flex w-50">
+                                    <div class="logo-img">
+                                        <img src="Images/kitani-logo.png" alt="">
+                                    </div>
+                                    <div class="logo-content">
+                                        <span>Kitani Studio</span> <br>
+                                        Design Studio
+                                    </div>
+                                </div>
+                                <div class="like d-flex gap-3 w-50 mt-2">
+                                    <div class="like-box d-flex">
+                                        <div class="loke-img">
+                                            <img src="Images/like-1.png" alt="">
+                                        </div>
+                                        <div class="like-content">
+                                            1.4k
+                                        </div>
+                                    </div>
+                                    <div class="like-box d-flex">
+                                        <div class="loke-img">
+                                            <img src="Images/like-2.png" alt="">
+                                        </div>
+                                        <div class="like-content">
+                                            2.3k
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
                     </div>
 
-                    <button class="btn text-light rounded-pill"  type="button">Buy Now</button>
 
-                    <div class="live-container d-flex gap-2">
-                        <button class="btn lv-btn text-light">LIVE NOW</button>
-                        <img src="Images/volume.svg" alt="">      
-                    </div>
-                   
-                    <div class="icon">
-                        <img src="Images/hd.png" alt="">
-                        <i class="fa-solid fa-closed-captioning"></i>
-                        <i class="fa-solid fa-gear"></i>
-                        <img src="Images/fullscreen.png" alt="">
-                    </div>
-
-                 
                 </div>
 
-                <div class="col-md-4 buy-container shadow p-4 mt-3">
+                <div class="col-lg-4 col-lg-4 buy-container shadow p-4 mt-3">
                     <h4>US$22.40 <span class="text-secondary text-decoration-line-through">$30.13</span></h4>
                     <button class="btn off-btn fs-5 mt-2" type="button">20%OFF</button>
 
@@ -398,50 +443,23 @@
                         </ul>
                     </div>
                 </div>
-                    
-                
+
+
             </div>
 
             <!-- lectures descrition, course and review -->
             <div class="row">
-                <div class="col-md-8 mt-3">
-                    <h3>VUE JS SCRATCH COURSE</h3>
-                    <div class="d-flex mt-2">
-                        <div class="logo d-flex w-50">
-                            <div class="logo-img">
-                                <img src="Images/kitani-logo.png" alt="">
-                            </div>
-                            <div class="logo-content">
-                                <span>Kitani Studio</span> <br>
-                                Design Studio
-                            </div>
-                        </div>
-                        <div class="like d-flex gap-3 w-50 mt-2">
-                            <div class="like-box d-flex">
-                                <div class="loke-img">
-                                    <img src="Images/like-1.png" alt="" >
-                                </div>
-                                <div class="like-content">
-                                    1.4k
-                                </div>
-                            </div>
-                            <div class="like-box d-flex">
-                                <div class="loke-img">
-                                    <img src="Images/like-2.png" alt="">
-                                </div>
-                                <div class="like-content">
-                                    2.3k
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-8  col">
+                    <div class="about-container mt-3">
+                        <h3>About Course</h3>
+                        <p>
+                            Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
+                        </p>
                     </div>
-                    <hr>
-                    <div class="about">
-                        <h5>About Course</h5>
-                        <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.</p>
-                    </div>
+
                 </div>
-                <div class="col-md-4 mt-3 d-flex rounded webinar-container">
+               
+                <div class="col-lg-4 col- mt-3 d-flex rounded webinar-container">
                     <div class="content p-3 w-50">
                         <h6>WEBINAR</h6>
                         <p class="tw-light">August 16, 2020</p>

@@ -1,0 +1,21 @@
+  JSON - Javascript Object Notation
+        => Used to store and exchange data
+
+        Data Types 
+        1) String
+        2) Number
+        3) Boolean
+        4) Array
+        5) Object
+        6) NULL
+
+        Advantage og JSON
+
+        -> Human Readable formate
+        -> language independent
+        -> support all popular progrmming languages
+        -> easy to organised and access
+        -> it is light weight
+
+        disadvantage 
+        -> can not use it for transfer video, audio and img or any binary information

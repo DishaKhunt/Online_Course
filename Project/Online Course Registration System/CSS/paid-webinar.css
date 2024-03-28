@@ -37,8 +37,10 @@ nav .dropdown:hover > .dropdown-menu {
     height: 480px;
 }
 
+
 .video-container .vdo-img .video-img{
     width: 98%;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -72,9 +74,6 @@ nav .dropdown:hover > .dropdown-menu {
     background: var(--txt-lightgreen);
     font-size: 12px;
 }
-.video-container .vdo-img .live-container svg{
-    color: var(--bg-secondary);
-}
 
 
 .video-container .vdo-img .icon{
@@ -85,6 +84,9 @@ nav .dropdown:hover > .dropdown-menu {
 
 
 /* buy container */
+.video-container .buy-container{
+    height: 470px;
+}
 .video-container .buy-container .off-btn{
     background-color:  #A04AE3;
     color: var(--white);
@@ -176,4 +178,56 @@ nav .dropdown:hover > .dropdown-menu {
 }
 .footer-bottom-container .social-media .fa-brands:hover{
     color: #17ddc0;
+}
+
+/* media query */
+@media (max-width:1399px){
+    .video-container .vdo-img .vdo-content{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        color: white;
+        width: 80%;
+    }
+    .video-container .vdo-img .rounded-pill{
+        position: absolute;
+        top: 50%;
+    }
+}
+@media (max-width:1024px){
+    .video-container .vdo-img .vdo-content{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        color: white;
+        width: 80%;
+    }
+}
+@media (max-width:768px){
+    .video-container .vdo-img img{
+        border-radius: 0px;
+    }
+    .video-container .vdo-img .vdo-content{
+        position: absolute;
+        top: 25%;
+        left: 0px;
+        color: white;
+        width: 100%;
+    }
+    .video-container .vdo-img .video-img{
+        width: 100%;
+    }
+}
+
+@media(max-width:395px){
+    .video-container .vdo-img .rounded-pill{
+        position: absolute;
+        top: 55%;
+        left: 36%;
+    }
+
+    .video-container .webinar-container{
+        height: 400px;
+    }
+    
 }

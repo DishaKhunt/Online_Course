@@ -148,3 +148,31 @@ nav .dropdown:hover > .dropdown-menu {
 .footer-bottom-container .social-media .fa-brands:hover{
     color: #17ddc0;
 }
+
+/* media query */
+@media (max-width:998px) and (min-width:425px){
+    .all-course-container .complete-container{
+        overflow-x: auto;
+        padding: 10px;
+    }
+    .all-course-container .complete-container::-webkit-scrollbar{
+        width: 0px;
+    }
+    .all-course-container .complete-container .card{
+        min-width: 300px;
+    }
+    
+}
+
+@media (max-width:425px) and (min-width:320px){
+    .all-course-container .complete-container{
+        overflow-x: auto;
+        padding: 10px;
+    }
+    .all-course-container .complete-container::-webkit-scrollbar{
+        width: 0px;
+    }
+    .all-course-container .complete-container .card{
+        min-width: 250px;
+    }
+}   

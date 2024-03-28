@@ -101,9 +101,6 @@ nav .dropdown:hover > .dropdown-menu {
 
 
 
-
-
-
 /* footer */
 .footer-container .row .col ul{
     list-style: none;
@@ -118,3 +115,31 @@ nav .dropdown:hover > .dropdown-menu {
 .footer-bottom-container .social-media .fa-brands:hover{
     color: #17ddc0;
 }
+
+/* media query */
+@media (max-width:998px) and (min-width:425px){
+    .wishlist-container .course-name{
+        overflow-x: auto;
+        padding: 10px;
+    }
+    .wishlist-container .course-name::-webkit-scrollbar{
+        width: 0px;
+    }
+    .wishlist-container .course-name .card{
+        min-width: 300px;
+    }
+    
+}
+
+@media (max-width:425px) and (min-width:320px){
+    .wishlist-container .course-name{
+        overflow-x: auto;
+        padding: 10px;
+    }
+    .wishlist-container .course-name::-webkit-scrollbar{
+        width: 0px;
+    }
+    .wishlist-container .course-name .card{
+        min-width: 250px;
+    }
+}   

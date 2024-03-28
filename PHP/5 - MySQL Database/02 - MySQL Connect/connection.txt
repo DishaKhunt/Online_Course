@@ -1,0 +1,13 @@
+1)connection:
+    mysqli_connect(Server Name, User Name, Password, Database Name)
+2)Run SQL Query:
+    mysqli_query(Connection Name, SQL Query)
+3)Close Connection:
+    mysqli_close(Connection Name)
+
+ 
+mysql programming Methods:-
+    1) MySQLi Procedural
+    2) MySQLi Object-Oriented
+    3) PDO
+  
